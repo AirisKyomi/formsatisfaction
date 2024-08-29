@@ -10,18 +10,20 @@
 
     <style>
         .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: #009879;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .button-link:hover {
-            background-color: #007f67;
-        }
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #009879;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 70px; /* Espacio entre botones */
+}
+
+.button-link:hover {
+    background-color: #007f67;
+}
     </style>
 
 </head>
@@ -30,13 +32,13 @@
   <div class="container">
     <form action="/add" method="post">
       <div class="form-group">
-        
-    </div>
+        <h1 style="font: size 100; ;" id="title" class="text-center">Gracias Por Tu Tiempo!</h1>
+      </div>
     </form>
+    <br>
       <form id="survey-form">
-          <h1 style="font: size 100; ;" id="title" class="text-center">Gracias Por Tu Tiempo!</h1>
-          <button><a href="/graph" class="button-link">Gráficas</a></button>
-             <button><a href="/datos" class="button-link">Datos de usuario</a></button>
+          <button class="button-link"><a href="/graph" class="button-link">Gráficas</a></button>
+          <button class="button-link"><a href="/datos" class="button-link">Datos de usuario</a></button>
       </form>
   </div>
 </body>

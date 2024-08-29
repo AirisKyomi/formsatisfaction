@@ -10,20 +10,71 @@
       href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css"
     />
     <style>
-        .charts-css .data {
-            padding-top: 10px;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            vertical-align: middle;
-            align-items: center;
-            gap: 100px;
-        }
-        .onlyGraph {
-            position: relative;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #009879;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.onlyGraph {
+    width: 100%;
+    max-width: 600px; /* Ajusta el ancho máximo de las gráficas */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+table.charts-css {
+    width: 100%;
+    height: auto;
+}
+
+table.charts-css.column {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.charts-css .data {
+    font-size: 14px;
+    padding-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.charts-css .tooltip {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
     </style>
   </head>
   <body>
@@ -105,7 +156,7 @@
       <h1>
         ¿Te gustaría volver a utilizar nuestros servicios/productos ?
       </h1>
-      <div class="onlyGraph" style="width: 500px; height: 280px">
+      <div class="onlyGraph" style="width: 600px; height: 280px">
         <table
           class="charts-css column multiple show-heading show-labels show-primary-axis data-spacing-20"
         >
