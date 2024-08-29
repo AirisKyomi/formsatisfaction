@@ -25,6 +25,10 @@ def indexito():
     nombre = "Juan"
     return render_template("index.html", nombre=nombre)
 
+@app.route("/inicio")
+def graph():
+    nombre = "inicio"
+    return render_template("inicio.html", nombre=nombre)
 
 @app.route("/graph")
 def graph():
@@ -65,6 +69,7 @@ def create():
         'document': request.form['document'],
         'age': request.form['age'],
         'service': request.form['service'],
+        'identificacion': request.form['identificacion'],
         'pq': request.form['pq'],
         'rp': request.form['rp'],
         'es': request.form['es'],
