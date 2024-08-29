@@ -25,7 +25,16 @@
         <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre" required />
       </div>
       <div class="form-group">
-        <label id="tarj-iden" for="document">tarjeta de identidad</label>
+        <p>¿Cual es el tipo de identificación?</p>
+        <select id="dropdown" name="identificacion" class="form-control" required>
+          <option value="Identidad">Tarjeta de Identidad</option>
+          <option value="Ciudadania">Cedula de Ciudadania</option>
+          <option value="Extranjeria">Cedula de Extranjeria</option>
+          <option value="PEP">P.E.P.</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label id="tarj-iden" for="document">Numero de identificación</label>
         <input type="text" name="document" id="tarj-iden" class="form-control" placeholder="Ingrese su número" required />
       </div>
       <div class="form-group">
