@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agradecimiento por llenar Encuesta</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #009879;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button-link:hover {
+            background-color: #007f67;
+        }
+    </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <form action="/add" method="post">
+      <div class="form-group">
+        
+    </div>
+    </form>
+      <form id="survey-form">
+          <h1 style="font: size 100; ;" id="title" class="text-center">Gracias Por Tu Tiempo!</h1>
+          <button><a href="/graph" class="button-link">Gráficas</a></button>
+             <button><a href="/datos" class="button-link">Datos de usuario</a></button>
+      </form>
+  </div>
+</body>
+</html>
